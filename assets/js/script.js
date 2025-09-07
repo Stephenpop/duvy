@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -12,9 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Play button functionality
 document.querySelector(".play-button")?.addEventListener("click", function () {
-  // Add your video play logic here
   console.log("Play button clicked")
   this.style.transform = "translate(-50%, -50%) scale(0.9)"
   setTimeout(() => {
@@ -22,7 +19,6 @@ document.querySelector(".play-button")?.addEventListener("click", function () {
   }, 150)
 })
 
-// Intersection Observer for animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -37,7 +33,6 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe elements for animation
 document.querySelectorAll(".service-card, .portfolio-item, .timeline-item").forEach((el) => {
   el.style.opacity = "0"
   el.style.transform = "translateY(30px)"
@@ -45,7 +40,6 @@ document.querySelectorAll(".service-card, .portfolio-item, .timeline-item").forE
   observer.observe(el)
 })
 
-// Header scroll effect
 let lastScrollTop = 0
 const header = document.querySelector(".header")
 
@@ -53,21 +47,26 @@ window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
   if (scrollTop > lastScrollTop && scrollTop > 100) {
-    // Scrolling down
     header.style.transform = "translateY(-100%)"
   } else {
-    // Scrolling up
     header.style.transform = "translateY(0)"
   }
 
   lastScrollTop = scrollTop
 })
 
-// Add loading animation
 window.addEventListener("load", () => {
   document.body.style.opacity = "1"
   document.body.style.transition = "opacity 0.5s ease"
 })
 
-// Initialize
 document.body.style.opacity = "0"
+
+const mobileNavToggle = document.querySelector(".mobile-nav-toggle")
+const navMenu = document.querySelector(".nav-menu")
+
+mobileNavToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active")
+  mobileNavToggle.querySelector("i").classList.toggle("fa-bars")
+  mobileNavToggle.querySelector("i").classList.toggle("fa-times")
+})
