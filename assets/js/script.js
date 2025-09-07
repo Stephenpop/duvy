@@ -15,23 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileToggle = document.querySelector(".mobile-menu-toggle")
   const mobileNav = document.querySelector(".mobile-nav")
 
-  console.log("[v0] DOM loaded, toggle:", mobileToggle, "nav:", mobileNav)
-
   if (mobileToggle && mobileNav) {
     mobileToggle.addEventListener("click", (e) => {
       e.stopPropagation()
-      console.log("[v0] Mobile toggle clicked")
 
       const isActive = mobileNav.classList.contains("active")
 
       if (isActive) {
         mobileNav.classList.remove("active")
         mobileToggle.classList.remove("active")
-        console.log("[v0] Menu closed")
       } else {
         mobileNav.classList.add("active")
         mobileToggle.classList.add("active")
-        console.log("[v0] Menu opened")
       }
     })
 
@@ -49,13 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileToggle.classList.remove("active")
       })
     })
-  } else {
-    console.log("[v0] Mobile toggle elements not found")
   }
 })
 
 document.querySelector(".play-button")?.addEventListener("click", function () {
-  console.log("Play button clicked")
   this.style.transform = "translate(-50%, -50%) scale(0.9)"
   setTimeout(() => {
     this.style.transform = "translate(-50%, -50%) scale(1)"
