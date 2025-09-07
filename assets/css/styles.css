@@ -131,7 +131,7 @@ body {
   color: white !important;
 }
 
-
+/* Added hero section styles */
 .hero {
   padding: 80px 0;
   background: white;
@@ -432,7 +432,7 @@ body {
   justify-content: center;
   font-size: 12px;
   color: #333;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .service-card h4 {
@@ -848,112 +848,7 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 99;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .nav-menu .sign-in-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 64px;
-  }
-
-  .about-content {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-columns {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .timeline-item {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .timeline-year {
-    text-align: left;
-  }
-
-  .services-header {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .portfolio-header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .experience-header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .hire-me-btn {
-    position: static;
-    margin-bottom: 30px;
-  }
-
-  .footer-right {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tools-grid {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
+/* Added additional page styles for contact, about, services */
 .contact-form-section {
   padding: 100px 0;
   background: white;
@@ -1224,6 +1119,98 @@ body {
 }
 
 @media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu .sign-in-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .timeline-year {
+    text-align: left;
+  }
+
+  .services-header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .portfolio-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hire-me-btn {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .footer-right {
+    padding-top: 0;
+  }
+
   .contact-content {
     flex-direction: column;
     gap: 40px;
@@ -1243,6 +1230,16 @@ body {
 }
 
 @media (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -1250,4 +1247,8 @@ body {
   .process-steps {
     grid-template-columns: 1fr;
   }
+}
+
+.desktop-only {
+  display: block;
 }
