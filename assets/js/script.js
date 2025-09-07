@@ -12,12 +12,15 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 })
 
 document.addEventListener("DOMContentLoaded", () => {
-  const mobileToggle = document.querySelector(".mobile-toggle")
+  const mobileToggle = document.querySelector(".mobile-menu-toggle")
   const mobileNav = document.querySelector(".mobile-nav")
 
+  console.log("[v0] DOM loaded, toggle:", mobileToggle, "nav:", mobileNav)
+
   if (mobileToggle && mobileNav) {
-    mobileToggle.addEventListener("click", () => {
-      console.log("[v0] Mobile toggle clicked")
+    mobileToggle.addEventListener("click", (e) => {
+      e.stopPropagation()
+      console.log("[v0] Mobile toggle clicked via event listener")
       mobileNav.classList.toggle("active")
       mobileToggle.classList.toggle("active")
     })
@@ -36,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileToggle.classList.remove("active")
       })
     })
+  } else {
+    console.log("[v0] Mobile toggle elements not found")
   }
 })
 
