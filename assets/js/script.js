@@ -11,6 +11,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileToggle = document.querySelector(".mobile-toggle")
+  const mobileNav = document.querySelector(".mobile-nav")
+
+  if (mobileToggle && mobileNav) {
+    mobileToggle.addEventListener("click", () => {
+      console.log("[v0] Mobile toggle clicked")
+      mobileNav.classList.toggle("active")
+      mobileToggle.classList.toggle("active")
+    })
+
+    document.addEventListener("click", (event) => {
+      if (!mobileToggle.contains(event.target) && !mobileNav.contains(event.target)) {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
+      }
+    })
+
+    const mobileNavLinks = mobileNav.querySelectorAll("a")
+    mobileNavLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
+      })
+    })
+  }
+})
+
 document.querySelector(".play-button")?.addEventListener("click", function () {
   console.log("Play button clicked")
   this.style.transform = "translate(-50%, -50%) scale(0.9)"
