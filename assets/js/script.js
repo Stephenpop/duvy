@@ -20,9 +20,19 @@ document.addEventListener("DOMContentLoaded", () => {
   if (mobileToggle && mobileNav) {
     mobileToggle.addEventListener("click", (e) => {
       e.stopPropagation()
-      console.log("[v0] Mobile toggle clicked via event listener")
-      mobileNav.classList.toggle("active")
-      mobileToggle.classList.toggle("active")
+      console.log("[v0] Mobile toggle clicked")
+
+      const isActive = mobileNav.classList.contains("active")
+
+      if (isActive) {
+        mobileNav.classList.remove("active")
+        mobileToggle.classList.remove("active")
+        console.log("[v0] Menu closed")
+      } else {
+        mobileNav.classList.add("active")
+        mobileToggle.classList.add("active")
+        console.log("[v0] Menu opened")
+      }
     })
 
     document.addEventListener("click", (event) => {
