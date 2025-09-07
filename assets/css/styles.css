@@ -17,6 +17,7 @@ body {
   padding: 0 20px;
 }
 
+/* Header */
 .header {
   background: white;
   padding: 20px 0;
@@ -69,14 +70,67 @@ body {
   color: white;
 }
 
-.mobile-nav-toggle {
+/* Mobile Navigation Styles */
+.mobile-menu-toggle {
   display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
+  flex-direction: column;
   cursor: pointer;
+  gap: 4px;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  transition: color 0.3s;
+}
+
+.mobile-nav-link:hover {
   color: #333;
 }
+
+.mobile-nav-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-signin {
+  background: #333;
+  color: white !important;
+  padding: 15px 20px !important;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 10px;
+  border: none !important;
+}
+
+.mobile-signin:hover {
+  background: #555 !important;
+  color: white !important;
+}
+
 
 .hero {
   padding: 80px 0;
