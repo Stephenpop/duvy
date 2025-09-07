@@ -17,10 +17,9 @@ body {
   padding: 0 20px;
 }
 
-/* Header */
 .header {
   background: white;
-  padding: 20px 0;
+  padding: 15px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -41,7 +40,7 @@ body {
 
 .nav-menu {
   display: flex;
-  gap: 40px;
+  gap: 35px;
 }
 
 .nav-link {
@@ -58,7 +57,7 @@ body {
 .sign-in-btn {
   background: white;
   border: 2px solid #333;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -70,7 +69,6 @@ body {
   color: white;
 }
 
-/* Mobile Navigation Styles */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -97,7 +95,7 @@ body {
   background: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 15px 15px;
-  padding: 20px;
+  padding: 15px;
   z-index: 1000;
   transform: translateY(-10px);
   opacity: 0;
@@ -112,7 +110,7 @@ body {
 
 .mobile-nav-link {
   display: block;
-  padding: 15px 0;
+  padding: 12px 0;
   text-decoration: none;
   color: #666;
   font-weight: 500;
@@ -131,10 +129,10 @@ body {
 .mobile-signin {
   background: #333;
   color: white !important;
-  padding: 15px 20px !important;
+  padding: 12px 18px !important;
   border-radius: 25px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   border: none !important;
 }
 
@@ -143,9 +141,8 @@ body {
   color: white !important;
 }
 
-/* Added hero section styles */
 .hero {
-  padding: 80px 0;
+  padding: 70px 0;
   background: white;
 }
 
@@ -153,7 +150,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
 }
 
 .hero-left {
@@ -161,10 +158,10 @@ body {
 }
 
 .hero-title {
-  font-size: 96px;
+  font-size: 90px;
   font-weight: 300;
   line-height: 0.9;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #333;
 }
 
@@ -180,14 +177,14 @@ body {
 
 .hero-image {
   width: 100%;
-  height: 350px;
+  height: 320px;
   object-fit: cover;
   border-radius: 20px;
-  margin-top: -20px;
+  margin-top: -15px;
 }
 
 .tools {
-  padding: 40px 0;
+  padding: 35px 0;
   background: white;
   border-top: 1px solid #eee;
   overflow: hidden;
@@ -201,7 +198,7 @@ body {
 .tools-track {
   display: flex;
   animation: slide 20s linear infinite;
-  gap: 60px;
+  gap: 50px;
 }
 
 .tool-item {
@@ -229,7 +226,7 @@ body {
 }
 
 .about {
-  padding: 100px 0;
+  padding: 90px 0;
   background: #fafafa;
 }
 
@@ -243,7 +240,7 @@ body {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   backdrop-filter: blur(10px);
 }
 
@@ -252,12 +249,12 @@ body {
   color: #999;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about-content {
   display: flex;
-  gap: 80px;
+  gap: 70px;
   align-items: flex-start;
 }
 
@@ -269,7 +266,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.3;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   color: #333;
 }
 
@@ -281,7 +278,7 @@ body {
 
 .video-thumbnail {
   width: 100%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -312,7 +309,7 @@ body {
 .stats {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
 }
 
 .stat-label {
@@ -338,15 +335,15 @@ body {
 }
 
 .services {
-  padding: 100px 0;
+  padding: 90px 0;
   background: white;
 }
 
 .services-header {
   display: flex;
-  gap: 80px;
+  gap: 70px;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .services-left {
@@ -357,7 +354,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.3;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   max-width: 500px;
 }
 
@@ -365,7 +362,7 @@ body {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   max-width: 400px;
 }
 
@@ -373,7 +370,7 @@ body {
   background: #333;
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -392,11 +389,11 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .service-card {
-  padding: 30px;
+  padding: 25px;
   border-radius: 20px;
   position: relative;
   transition: all 0.3s;
@@ -458,20 +455,20 @@ body {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .arrow {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 25px;
+  right: 25px;
   font-size: 20px;
   font-weight: bold;
   transition: transform 0.3s;
 }
 
 .experience {
-  padding: 100px 0;
+  padding: 90px 0;
   background: #fafafa;
 }
 
@@ -479,7 +476,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .experience-title {
@@ -499,14 +496,14 @@ body {
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .timeline-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px;
+  padding: 25px;
   border-bottom: 1px solid #eee;
   border-radius: 15px;
   transition: all 0.3s;
@@ -544,7 +541,7 @@ body {
 }
 
 .portfolio {
-  padding: 100px 0;
+  padding: 90px 0;
   background: white;
 }
 
@@ -552,7 +549,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .portfolio-left {
@@ -586,7 +583,7 @@ body {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 
 .portfolio-item {
@@ -595,7 +592,7 @@ body {
   transition: transform 0.3s;
   position: relative;
   cursor: pointer;
-  height: 300px;
+  height: 280px;
 }
 
 .portfolio-item img {
@@ -621,7 +618,7 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -654,7 +651,7 @@ body {
 }
 
 .testimonial {
-  padding: 100px 0;
+  padding: 90px 0;
   background: #fafafa;
   position: relative;
 }
@@ -681,7 +678,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-style: italic;
 }
 
@@ -690,7 +687,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .author-image {
@@ -718,15 +715,15 @@ body {
 .footer {
   background: #1a1a1a;
   color: white;
-  padding: 80px 0 40px;
+  padding: 70px 0 35px;
   position: relative;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
-  margin-bottom: 60px;
+  gap: 70px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -738,7 +735,7 @@ body {
   font-size: 48px;
   font-weight: 300;
   line-height: 1.2;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .footer-logo {
@@ -746,19 +743,19 @@ body {
   font-weight: bold;
   color: white;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .footer-description {
   font-size: 16px;
   color: #ccc;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .social-links {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .social-link {
@@ -784,7 +781,7 @@ body {
 
 .footer-right {
   flex: 1;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .hire-me-btn {
@@ -794,7 +791,7 @@ body {
   background: #333;
   color: white;
   border: 2px solid #555;
-  padding: 15px 25px;
+  padding: 12px 20px;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -816,7 +813,7 @@ body {
 
 .footer-columns {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 }
 
 .footer-column {
@@ -826,7 +823,7 @@ body {
 .footer-column h4 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: white;
 }
 
@@ -836,7 +833,7 @@ body {
 }
 
 .footer-column ul li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .footer-column ul li a {
@@ -852,7 +849,7 @@ body {
 
 .footer-bottom {
   border-top: 1px solid #333;
-  padding-top: 30px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -861,15 +858,14 @@ body {
   font-size: 14px;
 }
 
-/* Added additional page styles for contact, about, services */
 .contact-form-section {
-  padding: 100px 0;
+  padding: 90px 0;
   background: white;
 }
 
 .contact-content {
   display: flex;
-  gap: 80px;
+  gap: 70px;
   align-items: flex-start;
 }
 
@@ -881,20 +877,20 @@ body {
   font-size: 36px;
   font-weight: 400;
   line-height: 1.3;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact-description {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .form-group {
@@ -911,7 +907,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-  padding: 15px;
+  padding: 12px;
   border: 2px solid #eee;
   border-radius: 10px;
   font-size: 16px;
@@ -928,7 +924,7 @@ body {
   background: #333;
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
@@ -951,13 +947,13 @@ body {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .contact-icon {
@@ -985,21 +981,21 @@ body {
 }
 
 .skills-section {
-  padding: 100px 0;
+  padding: 90px 0;
   background: #fafafa;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  margin-top: 60px;
+  gap: 35px;
+  margin-top: 50px;
 }
 
 .skill-category h3 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -1018,13 +1014,13 @@ body {
 .services-detailed {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-top: 60px;
+  gap: 35px;
+  margin-top: 50px;
 }
 
 .service-detailed {
   background: white;
-  padding: 40px;
+  padding: 35px;
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
@@ -1044,7 +1040,7 @@ body {
   justify-content: center;
   font-size: 24px;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .service-detailed h3 {
@@ -1058,7 +1054,7 @@ body {
   font-size: 16px;
   color: #666;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .service-features {
@@ -1083,7 +1079,7 @@ body {
 }
 
 .process-section {
-  padding: 100px 0;
+  padding: 90px 0;
   background: white;
 }
 
@@ -1091,26 +1087,26 @@ body {
   font-size: 36px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #333;
 }
 
 .process-steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 35px;
 }
 
 .process-step {
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px 15px;
 }
 
 .step-number {
   font-size: 48px;
   font-weight: 300;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .process-step h4 {
@@ -1144,8 +1140,8 @@ body {
     right: 0;
     background: white;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 99;
   }
@@ -1165,12 +1161,12 @@ body {
   }
 
   .hero-title {
-    font-size: 64px;
+    font-size: 60px;
   }
 
   .about-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   .services-grid {
@@ -1183,12 +1179,12 @@ body {
 
   .footer-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   .footer-columns {
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
   }
 
   .timeline-item {
@@ -1202,22 +1198,22 @@ body {
 
   .services-header {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   .portfolio-header {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .experience-header {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
   }
 
   .hire-me-btn {
     position: static;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .footer-right {
@@ -1226,7 +1222,7 @@ body {
 
   .contact-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   .skills-grid {
@@ -1262,6 +1258,15 @@ body {
   .mobile-menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
   }
+
+  .service-card {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .portfolio-item {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1272,7 +1277,7 @@ body {
   .tools-grid {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
   }
 
   .skills-grid {
@@ -1281,6 +1286,14 @@ body {
 
   .process-steps {
     grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    max-height: 180px;
+  }
+
+  .portfolio-item {
+    height: 220px;
   }
 }
 
