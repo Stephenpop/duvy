@@ -76,6 +76,8 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  padding: 10px;
+  z-index: 1001;
 }
 
 .mobile-menu-toggle span {
@@ -83,6 +85,7 @@ body {
   height: 3px;
   background: #333;
   transition: all 0.3s;
+  border-radius: 2px;
 }
 
 .mobile-nav {
@@ -96,6 +99,15 @@ body {
   border-radius: 0 0 15px 15px;
   padding: 20px;
   z-index: 1000;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav.active {
+  display: block !important;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .mobile-nav-link {
@@ -1121,7 +1133,7 @@ body {
 
 @media (max-width: 768px) {
   .mobile-menu-toggle {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-menu {
@@ -1229,17 +1241,16 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Hide desktop sign-in button on mobile */
   .desktop-only {
     display: none !important;
   }
 
-  /* Show mobile navigation when active */
   .mobile-nav.active {
-    display: block;
+    display: block !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
   }
 
-  /* Mobile menu toggle animation */
   .mobile-menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
