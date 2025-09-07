@@ -817,6 +817,11 @@ body {
     display: flex;
   }
 
+  .nav-menu .sign-in-btn {
+    width: 100%;
+    text-align: center;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
