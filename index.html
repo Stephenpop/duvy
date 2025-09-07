@@ -3,152 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anyaibe Ebuka - Product Designer</title>
+    <meta name="description" content="Duvy, a London-based UX/UI Product Designer with over 8 years of experience, showcasing innovative design solutions.">
+    <meta name="keywords" content="Duvy, UX/UI Designer, Product Designer, Portfolio, London Designer, User Experience, Interface Design">
+    <meta name="author" content="Duvy">
+    <meta property="og:title" content="Duvy - Product Designer">
+    <meta property="og:description" content="Explore Duvy's portfolio of creative UX/UI design solutions, crafted by a skilled Product Designer based in London.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.duvy.com">
+    <meta property="og:image" content="https://www.duvy.com/assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Duvy - Product Designer">
+    <meta name="twitter:description" content="Discover Duvy's portfolio, featuring innovative UX/UI design projects by a London-based Product Designer.">
+    <meta name="twitter:image" content="https://www.duvy.com/assets/images/og-image.jpg">
+    <title>Duvy - Product Designer</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/auth-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <nav id="navbar">
+    <header class="header">
         <div class="container">
-            <div class="nav-container">
-                <div class="logo">Anyaibe Ebuka</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div class="nav-brand">
+                <span class="logo">🔷 Duvy</span>
             </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="project.html" class="nav-link">Project</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+            </nav>
+            <button class="sign-in-btn" onclick="window.location.href='signin.html'">Sign In</button>
         </div>
-    </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Anyaibe Ebuka</h1>
-            <p class="subtitle">Product Designer & Creative Strategist</p>
-            <div class="social-icons">
-                <a href="#" class="social-icon">📧</a>
-                <a href="#" class="social-icon">💼</a>
-                <a href="#" class="social-icon">🐦</a>
-                <a href="#" class="social-icon">📱</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="design-passion">
+    <section class="hero">
         <div class="container">
-            <h2 class="section-title fade-in">Design is My Passion</h2>
-            <div class="passion-content">
-                <div class="passion-text fade-in">
-                    <p>I believe great design is more than aesthetics, it's about creating meaningful experiences that solve real problems. With over 5 years of experience in product design, I specialize in crafting user-centered solutions that drive business growth and delight users.</p>
-                    <p>My approach combines strategic thinking with creative execution, ensuring every design decision is backed by research and user insights. I'm passionate about creating products that not only look beautiful but also function seamlessly.</p>
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">Product<br>Designer</h1>
+                    <p class="hero-subtitle">Hi, I'm Duvy. A UX/UI<br>designer based in London<br>with 8+ years of<br>experience.</p>
                 </div>
-                <div class="passion-images fade-in">
-                    <div class="passion-image" style="background-image: url('assets/images/20th.jpg');"></div>
+                <div class="hero-right">
+                    <img src="assets/images/designer.webp" alt="Product Designer" class="hero-image">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section class="tools">
         <div class="container">
-            <h2 class="section-title fade-in">What I Do</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive and visually appealing user interfaces that enhance user experience and drive engagement.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile App Design</h3>
-                    <p>Designing responsive mobile applications that work seamlessly across all devices and platforms.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">🔍</div>
-                    <h3>User Research</h3>
-                    <p>Conducting comprehensive user research to understand needs, behaviors, and pain points for better design decisions.</p>
-                </div>
-                <div class="service-card fade-in">
-                    <div class="service-icon">⚡</div>
-                    <h3>Prototyping</h3>
-                    <p>Building interactive prototypes to test and validate design concepts before development begins.</p>
+            <div class="tools-slider">
+                <div class="tools-track">
+                    <div class="tool-item"><i class="fab fa-adobe"></i> Illustrator</div>
+                    <div class="tool-item"><i class="fab fa-spotify"></i> Spotify</div>
+                    <div class="tool-item"><i class="fas fa-video"></i> Zoom</div>
+                    <div class="tool-item"><i class="fab fa-slack"></i> Slack</div>
+                    <div class="tool-item"><i class="fab fa-dropbox"></i> Dropbox</div>
+                    <div class="tool-item"><i class="fas fa-bolt"></i> Creative</div>
+                    <div class="tool-item"><i class="fab fa-figma"></i> Figma</div>
+                    <div class="tool-item"><i class="fab fa-sketch"></i> Sketch</div>
+                    <div class="tool-item"><i class="fab fa-adobe"></i> Illustrator</div>
+                    <div class="tool-item"><i class="fab fa-spotify"></i> Spotify</div>
+                    <div class="tool-item"><i class="fas fa-video"></i> Zoom</div>
+                    <div class="tool-item"><i class="fab fa-slack"></i> Slack</div>
+                    <div class="tool-item"><i class="fab fa-dropbox"></i> Dropbox</div>
+                    <div class="tool-item"><i class="fas fa-bolt"></i> Creative</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="timeline">
+    <section class="about">
         <div class="container">
-            <h2 class="section-title fade-in">Creative Growth Journey</h2>
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">2024</div>
-                        <div class="timeline-title">Senior Product Designer</div>
-                        <div class="timeline-desc">Leading design initiatives for multiple product lines, mentoring junior designers, and establishing design systems.</div>
+            <div class="section-label-btn">About Me</div>
+            <div class="about-content">
+                <div class="about-left">
+                    <h2 class="about-title">Design has always been more than just a job - it's my passion.</h2>
+                    <div class="video-container">
+                        <video src="assets/video/ux.mp4" alt="Designer at work" class="video-thumbnail" controls></video>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
                     </div>
-                    <div class="timeline-dot"></div>
                 </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">2022</div>
-                        <div class="timeline-title">Product Designer</div>
-                        <div class="timeline-desc">Focused on user experience optimization and interface design for web and mobile applications.</div>
+                <div class="about-right">
+                    <div class="stats">
+                        <div class="stat-item">
+                            <p class="stat-label">Successful projects completed</p>
+                            <span class="stat-number">+320</span>
+                            <p class="stat-description">Projects completed with satisfied clients worldwide</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-label">Happy clients worldwide</p>
+                            <span class="stat-number">+280</span>
+                            <p class="stat-description">Clients who trust our design expertise and creativity</p>
+                        </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">2020</div>
-                        <div class="timeline-title">UI Designer</div>
-                        <div class="timeline-desc">Started my journey in product design, working on various client projects and building design expertise.</div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">2019</div>
-                        <div class="timeline-title">Design Education</div>
-                        <div class="timeline-desc">Completed comprehensive design courses and began freelancing to gain practical experience.</div>
-                    </div>
-                    <div class="timeline-dot"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
+    <section class="services">
         <div class="container">
-            <h2 class="section-title fade-in">Featured Work</h2>
+            <div class="section-label-btn">Services</div>
+            <div class="services-header">
+                <div class="services-left">
+                    <h2 class="services-title">A Comprehensive look at what we offer and how we deliver</h2>
+                    <p class="services-description">We provide end-to-end design solutions that help businesses grow and succeed in the digital landscape.</p>
+                    <button class="services-signin-btn">Sign In</button>
+                </div>
+                <div class="services-right">
+                    <div class="services-grid">
+                        <div class="service-card service-card-light" data-hover-content="Strategic social media campaigns that convert viewers into customers with compelling visual storytelling.">
+                            <div class="card-ribbon"><i class="fas fa-star"></i></div>
+                            <h4>Social Ads</h4>
+                            <p>Creative and engaging social media advertising campaigns that drive results.</p>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="service-card service-card-light" data-hover-content="Advanced search optimization and user discovery experiences that improve engagement rates.">
+                            <div class="card-ribbon"><i class="fas fa-search"></i></div>
+                            <h4>Search Engineer</h4>
+                            <p>Optimizing search functionality and user discovery experiences.</p>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="service-card service-card-light" data-hover-content="Comprehensive content strategies that build brand authority and drive organic growth.">
+                            <div class="card-ribbon"><i class="fas fa-content"></i></div>
+                            <h4>Content Marketing</h4>
+                            <p>Strategic content creation and marketing solutions for brand growth.</p>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="service-card service-card-light" data-hover-content="Data-driven sales strategies that convert prospects into loyal customers through design psychology.">
+                            <div class="card-ribbon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Sales Marketing</h4>
+                            <p>Converting prospects into customers through strategic design.</p>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <div class="section-label-btn">Experience</div>
+            <div class="experience-header">
+                <h2 class="experience-title">A Yearly snapshot of my creative growth</h2>
+                <p class="experience-description">My journey through different roles and companies, building expertise in design and user experience.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Graphic Designer at Divine Glow Tech</h4>
+                        <p>Led creative direction for multiple client projects and brand identities.</p>
+                    </div>
+                    <div class="timeline-year"><strong>2015 - 2017</strong></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>UI/UX Designer at Deftera Studio</h4>
+                        <p>Specialized in user experience design and interface development.</p>
+                    </div>
+                    <div class="timeline-year"><strong>2017 - 2019</strong></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>UX Researcher at Korra Studio</h4>
+                        <p>Conducted user research and usability testing for digital products.</p>
+                    </div>
+                    <div class="timeline-year"><strong>2018 - 2021</strong></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Product Designer at Spark Inc</h4>
+                        <p>Leading product design initiatives and cross-functional collaboration.</p>
+                    </div>
+                    <div class="timeline-year"><strong>2021 - Now</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="section-label-btn">Portfolio</div>
+            <div class="portfolio-header">
+                <div class="portfolio-left">
+                    <h2 class="portfolio-title">Explore my portfolio of</h2>
+                    <h3 class="portfolio-subtitle-main">creative solutions</h3>
+                </div>
+                <div class="portfolio-right">
+                    <p class="portfolio-description">Featuring a collection of UI/UX projects that showcase innovative design thinking and user-centered solutions.</p>
+                </div>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image" style="background-image: url('assets/images/e-commerce.png');"></div>
-                    <div class="portfolio-info">
-                        <h3>E-Commerce Mobile App</h3>
-                        <p>A comprehensive shopping experience with intuitive navigation and seamless checkout process.</p>
+                <div class="portfolio-item" data-tags="Mobile, UI/UX" data-description="Modern mobile app interface design">
+                    <img src="assets/images/mobile_app.jpg" alt="Mobile App Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <p class="portfolio-item-description">Modern mobile app interface design</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image" style="background-image: url('assets/images/dashboard.png');"></div>
-                    <div class="portfolio-info">
-                        <h3>Analytics Dashboard</h3>
-                        <p>Data visualization platform that transforms complex metrics into actionable insights.</p>
+                <div class="portfolio-item" data-tags="Web, Dashboard" data-description="Analytics dashboard interface">
+                    <img src="assets/images/web_dashboard.jpg" alt="Web Dashboard">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">Web</span>
+                            <span class="tag">Dashboard</span>
+                        </div>
+                        <p class="portfolio-item-description">Analytics dashboard interface</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image" style="background-image: url('assets/images/social.png');"></div>
-                    <div class="portfolio-info">
-                        <h3>Social Media Platform</h3>
-                        <p>Community-focused application designed to enhance user engagement and content sharing.</p>
+                <div class="portfolio-item" data-tags="E-commerce, Branding" data-description="Complete e-commerce solution">
+                    <img src="assets/images/e-commerce_design.jpg" alt="E-commerce Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Branding</span>
+                        </div>
+                        <p class="portfolio-item-description">Complete e-commerce solution</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image" style="background-image: url('assets/images/fintech.png');"></div>
-                    <div class="portfolio-info">
-                        <h3>FinTech Application</h3>
-                        <p>Secure and user-friendly financial management tool with advanced security features.</p>
+                <div class="portfolio-item" data-tags="Landing, Marketing" data-description="High-converting landing page">
+                    <img src="assets/images/landing-page.webp" alt="Landing Page">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">Landing</span>
+                            <span class="tag">Marketing</span>
+                        </div>
+                        <p class="portfolio-item-description">High-converting landing page</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-tags="Brand, Identity" data-description="Complete brand identity system">
+                    <img src="assets/images/brand.jpg" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">Brand</span>
+                            <span class="tag">Identity</span>
+                        </div>
+                        <p class="portfolio-item-description">Complete brand identity system</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-tags="UI, Prototype" data-description="Interactive UI prototype">
+                    <img src="assets/images/ui-mockup.jpg" alt="UI Mockup">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-tags">
+                            <span class="tag">UI</span>
+                            <span class="tag">Prototype</span>
+                        </div>
+                        <p class="portfolio-item-description">Interactive UI prototype</p>
+                        <i class="fas fa-arrow-up-right portfolio-arrow"></i>
                     </div>
                 </div>
             </div>
@@ -157,42 +270,78 @@
 
     <section class="testimonial">
         <div class="container">
-            <div class="testimonial-content fade-in">
-                <div class="testimonial-quote">
-                    "Anyaibe's design expertise transformed our product completely. His attention to detail and user-centered approach resulted in a 40% increase in user engagement. He's truly exceptional at what he does."
+            <div class="quote-bg"><i class="fas fa-quote-left"></i></div>
+            <div class="testimonial-content">
+                <p class="testimonial-text">"Without Journey Commerce, we would never have been able to implement this system ourselves... Being a small team we don't have enough hours in the day."</p>
+                <p class="testimonial-text">"The team at Journey Commerce researched our brand, planned the content and provided weekly feedback to improve the performance. The results have been amazing and we couldn't ask for a better partner."</p>
+                <div class="testimonial-author">
+                    <img src="assets/images/lady-testimonial.webp" alt="Testimonial Author" class="author-image">
+                    <div class="author-info">
+                        <span class="author-name">Damien Schneider</span>
+                        <span class="author-title">CEO, Company Name</span>
+                    </div>
                 </div>
-                <div class="testimonial-author">Micheal Oguloye</div>
-                <div class="testimonial-role">CEO, TechStart Inc.</div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Get In Touch</h3>
-                    <p>Ready to bring your ideas to life? Let's collaborate and create something amazing together.</p>
+                <div class="footer-left">
+                    <h2 class="footer-title"><strong>Let's Connect There</strong></h2>
+                    <div class="footer-brand">
+                        <span class="footer-logo">🔷 Duvy</span>
+                        <p class="footer-description">Product Designer specializing in user experience and interface design.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>Email: <a href="mailto:anyaibeebuka@gmail.com">anyaibeebuka@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+23415035012">+23415035012</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Me</h3>
-                    <p><a href="#">LinkedIn</a></p>
-                    <p><a href="#">Twitter</a></p>
-                    <p><a href="#">Dribbble</a></p>
-                    <p><a href="#">Behance</a></p>
+                <div class="footer-right">
+                    <button class="hire-me-btn">
+                        <span>Hire Me Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#">UI/UX Design</a></li>
+                                <li><a href="#">Product Design</a></li>
+                                <li><a href="#">Brand Identity</a></li>
+                                <li><a href="#">Consultation</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="project.html">Project</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">hello@duvy.com</a></li>
+                                <li><a href="#">+234 701 234 5678</a></li>
+                                <li><a href="#">Owerri, Nigeria</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Anyaibe Ebuka. All rights reserved.</p>
+                <p>&copy; 2024 Duvy. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
